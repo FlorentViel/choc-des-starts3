@@ -1,3 +1,5 @@
+import EKNA from './company/Ekna.svg'
+import NSY2S from './company/NSY2S.svg'
 import backend from "./backend.png";
 import carrent from "./carrent.png";
 import close from "./close.svg";
@@ -29,6 +31,8 @@ import typescript from "./tech/typescript.png";
 import web from "./web.png";
 
 export {
+  EKNA,
+  NSY2S ,
   logo,
   logoDV,
   backend,
