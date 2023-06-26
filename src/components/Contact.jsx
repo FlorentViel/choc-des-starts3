@@ -1,14 +1,15 @@
-import { useState, useRef } from "react";
-import { motion } from "framer-motion";
-import emailjs from "@emailjs/browser";
-import { styles } from "../styles";
+import { useRef, useState } from "react";
+
 import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
+import emailjs from "@emailjs/browser";
+import { motion } from "framer-motion";
 import { slideIn } from "../utils/motion";
+import { styles } from "../styles";
 
 const Contact = () => {
   const formRef = useRef();
-  const [form, serForm] = useState({
+  const [form, setForm] = useState({
     name: "",
     email: "",
     message: "",
@@ -16,8 +17,41 @@ const Contact = () => {
 
   const [loading, setLoading] = useState(false);
 
-  const handleChange = (e) => {};
-  const handleSubmit = (e) => {};
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setForm({ ...form, [name]: value });
+  };
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setLoading(true);
+    
+    emailjs.send(
+      'service_aevxqrm',
+      'template_bqboef4',
+    {
+      from_name: form.name,
+      to_name: 'David Cordoba Bonvin',
+      from_email: form.email,
+      to_email: 'bovincode@gmail.com',
+      message: form.message,
+    }, 
+    'sXBE4INFgDreC_U1U'
+    )
+    .then(() => {
+      setLoading(false);
+      alert('Merci, je vous contacterai dès que possible. ');
+      
+      setForm({
+        name: '',
+        email: '',
+        message: '',
+      })
+    }, (error) => {
+      setLoading(false)
+      console.log(error);
+      alert("Quelque chose n'a pas fonctionné")
+    })
+  };
 
   return (
     <div className=" xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden">
@@ -57,8 +91,7 @@ const Contact = () => {
           <label className="flex flex-col">
             <span className="text-white font-medium mb-4">Message</span>
             <textarea
-            rows="7"
-              
+              rows="7"
               name="message"
               value={form.message}
               onChange={handleChange}
@@ -70,18 +103,16 @@ const Contact = () => {
             type="sumit"
             className="bg-tertiary py-3 px-8 outline-none w-fit text-white font-bold shadow-md shadow-primary rounded-xl "
           >
-            {loading ? 'envoi' : 'envoyer'}
+            {loading ? "envoi" : "envoyer"}
           </button>
         </form>
       </motion.div>
 
       <motion.div
-      variants={slideIn("right", "tween", 0.2, 1)}
-      className="xl:flex-1 xl:h-auto md:h-[550px] h-[350px]" 
+        variants={slideIn("right", "tween", 0.2, 1)}
+        className="xl:flex-1 xl:h-auto md:h-[550px] h-[350px]"
       >
-
-      <EarthCanvas/>
-
+        <EarthCanvas />
       </motion.div>
     </div>
   );

@@ -1,5 +1,3 @@
-import React, { Suspense } from "react";
-import { Canvas } from "@react-three/fiber";
 import {
   Decal,
   Float,
@@ -7,12 +5,18 @@ import {
   Preload,
   useTexture,
 } from "@react-three/drei";
+import React, { Suspense } from "react";
 
+import { Canvas } from "@react-three/fiber";
 import CanvasLoader from "../Loader";
-
 
 const Ball = (props) => {
   const [decal] = useTexture([props.imgUrl]);
+
+  const checkForNaN = (value) => {
+    return isNaN(value) ? 0 : value;
+  };
+
 
   return (
     <Float speed={1.75} rotationIntensity={1} floatIntensity={2}>
@@ -27,8 +31,8 @@ const Ball = (props) => {
           floatShading
         />
         <Decal
-          position={[0, 0, 1]}
-          rotation={[2 * Math.PI, 0, 6.25]}
+          position={[checkForNaN(0), checkForNaN(0), checkForNaN(1)]}
+          rotation={[2 * Math.PI, checkForNaN(0), checkForNaN(6.25)]}
           floatShading
           map={decal}
         />
