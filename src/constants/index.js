@@ -6,6 +6,7 @@ import {
   creator,
   css,
   docker,
+  ekna_page,
   figma,
   git,
   html,
@@ -15,6 +16,8 @@ import {
   mobile,
   mongodb,
   nodejs,
+  porfolio_1,
+  porfolio_2,
   reactjs,
   redux,
   shopify,
@@ -193,7 +196,7 @@ const projects = [
        color: "pink-text-gradient",
      },
    ],
-   image: carrent,
+   image: porfolio_1,
    source_code_link: "https://www.davidbovin.com/",
  },
  {
@@ -214,10 +217,31 @@ const projects = [
        color: "pink-text-gradient",
      },
    ],
-   image: jobit,
+   image: porfolio_2,
    source_code_link: "https://www.cordobabonvin.com/",
  },
  
+ {
+  name: "Ekna  ",
+  description:
+    "Lors d'un stage chez ekna, j'ai travaillé sur la création de plusieurs vues pour cette application web.",
+  tags: [
+    {
+      name: "Laravel 9.0",
+      color: "blue-text-gradient",
+    },
+    {
+      name: "Bootstrap",
+      color: "green-text-gradient",
+    },
+    {
+      name: "Php",
+      color: "pink-text-gradient",
+    },
+  ],
+  image: ekna_page,
+  source_code_link: "https://www.ekna.fr/",
+},
 ];
 
 export { services, technologies, experiences, testimonials, projects };
