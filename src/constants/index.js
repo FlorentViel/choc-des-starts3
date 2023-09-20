@@ -3,6 +3,7 @@ import {
   NSY2S,
   backend,
   carrent,
+  cr7,
   creator,
   css,
   docker,
@@ -10,8 +11,10 @@ import {
   figma,
   git,
   html,
+  jackson,
   javascript,
   jobit,
+  lebron,
   meta,
   mobile,
   mongodb,
@@ -27,6 +30,7 @@ import {
   threejs,
   tripguide,
   typescript,
+  usainBolt,
   web,
 } from "../assets";
 
@@ -36,7 +40,7 @@ export const navLinks = [
    title: "Jouer",
  },
  {
-   id: "work",
+   id: "cards",
    title: "Défi",
  },
  {
@@ -244,4 +248,94 @@ const projects = [
 },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+const stars = [
+  {
+    name: "Cristiano Ronaldo",
+    description:
+      "Surnommé CR7, est un footbaleur international portugais qui joue au poste d'attaquant à Al-Nasser",
+    tags: [
+      {
+        name: "Football 90",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Basketball 20 ",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Danse 50",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: cr7,
+    source_code_link: "https://www.davidbovin.com/",
+  },
+  {
+    name: "Michael Jackson ",
+    description:
+      "c'est un auteur-compositeur-interprète, danseur-chorégraphe et acteur américain",
+    tags: [
+      {
+        name: "Football 70",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Basketball 10 ",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Danse 99",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: jackson,
+    source_code_link: "https://www.davidbovin.com/",
+  },
+
+  {
+    name: "Lebron James ",
+    description:
+      "c'est un joueur professionnel américain de basket-ball qui aux Lakers de Los Angeles en NBA",
+    tags: [
+      {
+        name: "Football 30",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Basketball 99 ",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Danse 70",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: lebron,
+    source_code_link: "https://www.davidbovin.com/",
+  },
+
+  {
+    name: "Usain Bolt ",
+    description:
+      "c'est spécialiste des épreuves de sprint, généralement considéré comme le plus grand sprinter de tous les temps.",
+    tags: [
+      {
+        name: "Football 70",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Basketball 50 ",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Danse 40",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: usainBolt,
+    source_code_link: "https://www.davidbovin.com/",
+  },
+]
+
+
+export { services, technologies, experiences, testimonials, projects , stars};

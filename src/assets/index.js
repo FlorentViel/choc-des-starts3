@@ -3,6 +3,7 @@ import NSY2S from './company/NSY2S.svg'
 import backend from "./backend.png";
 import carrent from "./carrent.png";
 import close from "./close.svg";
+import cr7 from "./stars/cr7.svg"
 import creator from "./creator.png";
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
@@ -12,8 +13,10 @@ import git from "./tech/git.png";
 import github from "./github.png";
 import html from "./tech/html.png";
 import iconChoc from "./icons/iconChoc.png"
+import jackson from "./stars/michael-jackson.svg"
 import javascript from "./tech/javascript.png";
 import jobit from "./jobit.png";
+import lebron from "./stars/lebron-james.svg"
 import logo from "./logo.svg";
 import logoDV from "./logoDV.svg";
 import menu from "./menu.svg";
@@ -32,6 +35,7 @@ import tesla from "./company/tesla.png";
 import threejs from "./tech/threejs.svg";
 import tripguide from "./tripguide.png";
 import typescript from "./tech/typescript.png";
+import usainBolt from "./stars/usainBolt.svg"
 import versus from "./icons/versus.png"
 import web from "./web.png";
 
@@ -71,4 +75,9 @@ export {
   carrent,
   jobit,
   tripguide,
+  cr7,
+  lebron,
+  jackson,
+  usainBolt,
+  versus,
 };

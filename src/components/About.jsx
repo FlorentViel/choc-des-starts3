@@ -49,11 +49,11 @@ L'application offre une manière amusante et originale de comparer les stars de 
     Les utilisateurs peuvent choisir leurs stars préférées et voir comment elles se comportent dans un défi inattendu.
     </motion.p>
 
-    <div className="mt-20 flex flex-wrap gap-10">
+    {/* <div className="mt-20 flex flex-wrap gap-10">
       {services.map((service, index) => (
         <ServiceCard key={service.title} index={index} {...service} />
       ))}
-    </div>
+    </div> */}
     </>
   )
 }

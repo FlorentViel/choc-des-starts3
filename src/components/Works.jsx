@@ -1,11 +1,13 @@
-import { Tilt } from "react-tilt";
-import { motion } from "framer-motion";
-
-import { styles } from "../styles";
-import { github } from "../assets";
-import { SectionWrapper } from "../hoc";
-import { projects } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
+
+import { SectionWrapper } from "../hoc";
+import { Tilt } from "react-tilt";
+import { github } from "../assets";
+import { motion } from "framer-motion";
+import { projects } from "../constants";
+import {stars} from "../constants"
+import { styles } from "../styles";
+import { versus } from "../assets"
 
 const ProjectCard = ({ index, name, description, tags, image, source_code_link}) => {
   return (
@@ -23,7 +25,7 @@ const ProjectCard = ({ index, name, description, tags, image, source_code_link})
     <div className="absolute inset-0 flex justify-end card-img_hover">
       <div onClick={ () => window.open(source_code_link,"_blank")}
       className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer">
-        <img src={github} alt="github" className="w-1/2 h-1/2  object-contain" />
+        <img src={versus} alt="github" className="w-1/2 h-1/2  object-contain" />
       </div>
     </div>
   </div>
@@ -50,24 +52,19 @@ const Works = () => {
   return (
     <>
       <motion.div variants={textVariant()}>
-        <p className={styles.sectionSubText}>Mes travails</p>
-        <h2 className={styles.sectionHeadText}>Projects</h2>
+        <p className={styles.sectionSubText}>Cards</p>
+        <h2 className={styles.sectionHeadText}>Stars</h2>
       </motion.div>
       <div className="w-full flex">
         <motion.p
           variants={fadeIn("", "", 0.1, 1)}
           className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]"
         >
-          Les projets suivants présentent mes compétences et mon expérience à
-          travers des exemples concrets de mon travail. Chaque projet est
-          brièvement décrit avec des liens vers des dépôts de code et des
-          démonstrations en direct. Il reflète ma capacité à résoudre des
-          problèmes complexes, à travailler avec différentes technologies et à
-          gérer des projets de manière efficace.
+          Vous trouverez ici des informations sur chaque star du sport ou du spectacle, avec trois notes, des scores pour le football, le basket-ball et la danse, ainsi qu'un lien vers la biographie de la star. 
         </motion.p>
       </div>
       <div className="mt-20 flex flex-wrap gap-7">
-        {projects.map((project, index) => (
+        {stars.map((project, index) => (
           <ProjectCard
           key={`projec-${index}`}
           index={index}
@@ -80,4 +77,4 @@ const Works = () => {
   );
 };
 
-export default SectionWrapper(Works, "");
+export default SectionWrapper(Works, "cards");
