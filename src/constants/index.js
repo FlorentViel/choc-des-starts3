@@ -33,33 +33,33 @@ import {
 export const navLinks = [
  {
    id: "about",
-   title: "About",
+   title: "Jouer",
  },
  {
    id: "work",
-   title: "Work",
+   title: "Défi",
  },
  {
    id: "contact",
-   title: "Contact",
+   title: "Les Stars",
  },
 ];
 
 const services = [
  {
-   title: "Web Developer",
+   title: "Musiciens",
    icon: web,
  },
  {
-   title: "React Developer",
+   title: "Footballistes",
    icon: mobile,
  },
  {
-   title: "Backend Developer",
+   title: "Acteurs",
    icon: backend,
  },
  {
-   title: "DevOps",
+   title: "Divers",
    icon: creator,
  },
 ];

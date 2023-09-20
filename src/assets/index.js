@@ -11,6 +11,7 @@ import figma from "./tech/figma.png";
 import git from "./tech/git.png";
 import github from "./github.png";
 import html from "./tech/html.png";
+import iconChoc from "./icons/iconChoc.png"
 import javascript from "./tech/javascript.png";
 import jobit from "./jobit.png";
 import logo from "./logo.svg";
@@ -31,9 +32,11 @@ import tesla from "./company/tesla.png";
 import threejs from "./tech/threejs.svg";
 import tripguide from "./tripguide.png";
 import typescript from "./tech/typescript.png";
+import versus from "./icons/versus.png"
 import web from "./web.png";
 
 export {
+  iconChoc,
   porfolio_1,
   porfolio_2,
   ekna_page,

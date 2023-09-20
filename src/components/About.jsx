@@ -32,21 +32,21 @@ const About = () => {
   return (
     <>
     <motion.div variants={textVariant()}>
-      <p className={styles.sectionSubText}>Introduction</p>
-      <h2 className={styles.sectionHeadText}>A propos de moi.</h2>
+      <p className={styles.sectionSubText}>Présentation</p>
+      <h2 className={styles.sectionHeadText}>A propos du jeu</h2>
     </motion.div>
-    <motion.p variants={fadeIn("","", 0.1,1)}
+    <motion.p variants={fadeIn("right","", 0.2,1)}
     className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'>
+      Choc des stars est une application web qui confronte des stars de différents domaines, tels que <span className="font-bold text-white-100">la musique</span>, le cinéma, le sport, etc., dans un <span className="font-bold text-red-700">ring de boxe</span>. Les utilisateurs peuvent choisir deux stars pour s'affronter, et le système génère un résultat aléatoire pour l'affrontement.
+L'application offre une manière amusante et originale de comparer les stars de différents domaines. 
     
-    Je suis un développeur d'applications <span className="font-bold text-white-100">full stack</span>, formé en JavaScript et Php, et doté d'une solide expérience dans des frameworks tels que <span className="font-bold text-red-700">React</span>, <span className="font-bold text-green-700">Node.Js</span> et <span className="font-bold text-white-100">Three.Js</span>. Ma capacité d'apprentissage rapide et ma volonté de travailler en étroite collaboration avec mes collègues me permettent de créer des solutions efficaces, évolutives et conviviales qui résolvent les problèmes du monde réel. Ensemble, donnons vie à vos idées !
+    
 
 
     </motion.p>
-    <motion.p variants={fadeIn("left","", 0.1,1)}
+    <motion.p variants={fadeIn("left","", 0.2,1)}
     className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'> 
-    Originaire de Cali, en Colombie, j'ai déménagé en France il y a trois ans. Outre ma passion pour la programmation, j'apprécie également jouer de la musique et je suis fier de détenir une licence de football FFF. Ma nature sociable me pousse à passer du temps de qualité avec ma famille et mes amis.
-
-N'hésitez pas à parcourir mon site web pour en savoir plus sur mes compétences et mes réalisations. Je suis impatient de collaborer avec vous et de relever de nouveaux défis passionnants !
+    Les utilisateurs peuvent choisir leurs stars préférées et voir comment elles se comportent dans un défi inattendu.
     </motion.p>
 
     <div className="mt-20 flex flex-wrap gap-10">

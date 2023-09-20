@@ -19,16 +19,17 @@ const App = () => {
         <div className="relative z-0 bg-primary">
           <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
             <Navbar />
-            <Hero />
+            <h1 className="text-end">Choc des starts</h1>
+            {/* <Hero /> */}
           </div>
-          <About />
-          <Experience />
+           <About />
+          {/*<Experience /> */}
           {/* <Tech /> */}
-          <Works />
+          {/* <Works /> */}
           {/* <Feedbacks /> */}
           <div className="relative z-0">
-            <Contact />
-            <StarsCanvas />
+            {/* <Contact />
+            <StarsCanvas /> */}
           </div>
         </div>
       </BrowserRouter>
