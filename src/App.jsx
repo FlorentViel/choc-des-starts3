@@ -8,7 +8,7 @@ import {
   StarsCanvas,
   Tech,
   Works,
-  Test,
+  
 } from "./components";
 
 import { BrowserRouter } from "react-router-dom";
@@ -20,7 +20,7 @@ const App = () => {
         <div className="relative z-0 bg-primary">
           <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
             <Navbar />
-            <h1 className="text-end">Choc des starts - Personnel</h1>
+            <h1 className="text-end">Choc des starts</h1>
             {/* <Hero /> */}
           </div>
            <About />
@@ -33,10 +33,14 @@ const App = () => {
              <Contact />
             <StarsCanvas /> 
           </div>
+          <Tech></Tech>
 
 
-          <Test></Test>
+         <div>
+         </div>
+
         </div>
+
       </BrowserRouter>
     
   );

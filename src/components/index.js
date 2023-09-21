@@ -7,7 +7,6 @@ import Experience from './Experience';
 import Works from './Works';
 import Feedbacks from './Feedbacks';
 import Contact from './Contact';
-import Test from './test';
 export {
   Hero,
   Navbar,
@@ -21,5 +20,4 @@ export {
   BallCanvas, 
   ComputersCanvas, 
   StarsCanvas,
-  Test
 }
