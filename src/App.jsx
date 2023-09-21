@@ -33,6 +33,7 @@ const App = () => {
              <Contact />
             <StarsCanvas /> 
           </div>
+          <Tech></Tech>
 
 
          <div>
