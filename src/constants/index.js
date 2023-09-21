@@ -338,4 +338,5 @@ const stars = [
 ]
 
 
+
 export { services, technologies, experiences, testimonials, projects , stars};
